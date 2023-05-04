@@ -5,8 +5,9 @@
     <classes>
       <class name="com.dominos.AddProductsTest">
         <methods>
+          <include name="launchingBroswer"/>
           <include name="addProductsTest"/>
-          <include name="launchingBrowser"/>
+          <include name="closingBrowser"/>
         </methods>
       </class> <!-- com.dominos.AddProductsTest -->
     </classes>

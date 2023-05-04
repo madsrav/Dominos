@@ -1,7 +1,5 @@
 package com.dominos;
 
-import static org.testng.Assert.assertEquals;
-
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;

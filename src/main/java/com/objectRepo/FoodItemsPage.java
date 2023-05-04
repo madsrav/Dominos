@@ -42,13 +42,16 @@ public class FoodItemsPage {
 
 
 	public double clickOnAddTocart(String product) throws InterruptedException {
+		//clicking on vegPizzaSection
 		getClickOnVegPizzaSection().click();
 		Thread.sleep(3000);
+		//Adding the product to cart by using javaScriptClick
 		WebElement element=driver.findElement(By.xpath("//span[.='"+product+"']/../..//span[text()='ADD TO CART']"));
 		utilities.jsClick(driver, element);
 		Thread.sleep(3000);
 		getFinalClick().click();
 		
+		//for increasing the no of produts
 		WebElement increment = driver.findElement(By.xpath("//span[.='"+product+"']/../..//div[@data-label='increase']"));
 		utilities.jsClick(driver, increment);
 		WebElement individualprice = driver.findElement(By.xpath("//div[@class='crt-cnt-descrptn']/span[.='"+product+"']/../../..//span[@class='rupee']"));
@@ -58,6 +61,7 @@ public class FoodItemsPage {
 	
 	public double removeItems(String product)
 	{
+		//for decreasing no of products
 	      WebElement decrement = driver.findElement(By.xpath("//span[.='"+product+"']/../..//div[@data-label='decrease']"));
 	      utilities.jsClick(driver, decrement);
 	      

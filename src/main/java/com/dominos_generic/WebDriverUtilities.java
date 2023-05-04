@@ -14,16 +14,6 @@ import org.openqa.selenium.support.ui.Select;
 
 	public class WebDriverUtilities {
 		
-	/*
-	 * use this meth for entering values
-	 * @param element
-	 * @param text
-	 */	
-		public void type(WebElement element,String text)
-		{
-			element.sendKeys(text);
-		}
-		
 		/*
 		 * use this for mousehover
 		 */
